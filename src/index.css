@@ -1,13 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100dvh;
+  background: url(/public/img/bg.jpeg);
+  background-size: cover;
+}
+
+#root {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+#root-layout {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.register-button-home {
+  background: linear-gradient(
+    339deg,
+    rgba(32, 155, 220, 1) 0%,
+    rgba(17, 95, 160, 1) 50%,
+    rgba(31, 142, 207, 1) 62%
+  );
+}
+
+#track-what-you-watch {
+  background: radial-gradient(
+    61.42% 1213.78% at 18.1% 57.03%,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.6) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
